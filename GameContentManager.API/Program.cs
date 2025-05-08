@@ -69,7 +69,7 @@ builder.Services.AddCors(options =>
     });
 });
 
-
+builder.WebHost.UseUrls("http://*:10000");
 var app = builder.Build();
 builder.Services.AddCors();
 
